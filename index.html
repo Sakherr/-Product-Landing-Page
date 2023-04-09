@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Product Landing Page</title>
+    <style>
+      html {
+        font-size: 20px;
+        
+    
+    }
+    body {
+        background: #30E8BF;  
+background: -webkit-linear-gradient(to right, #FF8235, #30E8BF);  
+background: linear-gradient(to right, #FF8235, #30E8BF); 
+
+    }
+
+      #nav-bar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #333;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+      .nav-link {
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+        font-weight: bold;
+      }
+      .nav-link:hover {
+        color: lightgrey;
+      }
+      #form {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+      }
+      #email {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+#email:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+      @media (max-width: 600px) {
+        #nav-bar {
+          flex-direction: column;
+          align-items: center;
+        }
+        .nav-link {
+          margin: 10px 0;
+        }
+      }
+      #video {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #333;
+  transition: border-color 0.5s ease;
+}
+
+#video:hover {
+  border-color: #fc0404;
+}
+
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <img id="header-img" src="logo.png" alt="logo">
+      <nav id="nav-bar">
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#pricing">Pricing</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <section id="features">
+        <h2>Features</h2>
+        <p>Our pianos use only the highest quality materials, from the finest woods to the most exquisite ivory keys. We carefully source our materials from trusted suppliers, ensuring that every piano is crafted to perfection.
+
+        </p>
+      </section>
+      <section id="pricing">
+        <h2>Pricing</h2>
+        <p>We believe that everyone should have access to a high-quality piano, which is why we offer competitive pricing on all of our instruments. We also offer flexible payment plans and financing options to make it easier for you to bring the joy of music into your home.
+
+
+
+
+        </p>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+          <label for="email">Enter your email:</label>
+          <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+          <input type="submit" id="submit" value="Submit">
+        </form>
+      </section>
+      <section >
+        <h2>Product Video</h2>
+        <video id="video" src="x.mp4" controls></video>
+      </section>
+    </main>
+  </body>
+</html>
